@@ -1,0 +1,361 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 231, 20);
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* header */
+header {
+  margin: 0;
+  padding: 0;
+}
+header > h1 {
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  font-family: "ubuntu";
+  color: rgb(189, 231, 20);
+  padding-inline: 30px;
+}
+.headclass {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 0px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  font-size: 20px;
+}
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#talk {
+  background-color: rgb(189, 231, 20);
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#menu {
+  padding: 20px;
+  border-radius: 6px;
+}
+body {
+  background-image: url(ueHvPU.jpg);
+  background-attachment: fixed;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition:all 2s ease-in 4s;
+}
+.hclass:hover {
+  color: rgb(189, 231, 20);
+}
+#section1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+#section1 > p {
+  font-size: 30px;
+  text-align: left;
+  margin-inline-start: 120px;
+  width: 40%;
+  padding: 0;
+  margin-top: 0;
+  display: block;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+#one {
+  border: none;
+  font-size: 80px;
+  margin-inline-start: 120px;
+  padding: 0;
+  margin-bottom: 0;
+}
+#two {
+  border: none;
+  font-size: 80px;
+  margin-inline-start: 120px;
+  margin-top: 0;
+  -webkit-text-stroke: 0.5px white;
+  /* color:transparent; */
+}
+#section1 > h2 {
+  display: flex;
+  transition: all 0.3s linear;
+}
+#leftscrollbar {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  transform: rotate(90deg);
+  gap: 14em;
+  align-items: center;
+  position: absolute;
+  top: 24em;
+  left: -13em;
+}
+.right {
+  display: flex;
+  transform: rotate(90deg);
+  gap: 14em;
+  align-items: center;
+  position: absolute;
+  top: 24em;
+  right: -182px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+#b1 {
+  right: 25px;
+  bottom: 125px;
+  transform: rotate(269deg);
+}
+#b2 {
+  right: 25px;
+  bottom: 175px;
+  transform: rotate(269deg);
+}
+#b3 {
+  right: 25px;
+  bottom: 225px;
+  transform: rotate(269deg);
+}
+#b4 {
+  right: 25px;
+  bottom: 275px;
+  transform: rotate(269deg);
+}
+#marque {
+  color: black;
+  background-color: rgb(189, 231, 20);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(45 45 45);
+  color: rgb(114, 101, 101);
+  width: 435px;
+  gap: 8px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+}
+form > input {
+  border: 2px solid rgb(181, 116, 60);
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+}
+form > button {
+  border: 2px solid rgb(181, 116, 60);
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+}
+form > button:hover {
+  border: 2px solid rgb(181, 116, 60);
+  background-color: rgb(181, 116, 60);
+}
+form > textarea {
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(181, 116, 60);
+}
+form > input:focus-within {
+  outline: none;
+}
+form > textarea:focus-within {
+  outline: none;
+}
+form > label {
+  color: white;
+  font-size: 20px;
+}
+#contactone {
+  padding: 100px;
+  margin-left: 400px;
+}
+#worldwide {
+  text-transform: capitalize;
+}
+#About {
+  padding-top: 80px;
+}
+#About > p > i {
+  color: rgb(85, 101, 60);
+  font-size: 90px;
+}
+#About > p {
+  color: rgb(243, 239, 232);
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 13px;
+  padding: 40px;
+}
+#about_buttons {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 15px;
+  padding-top: 20px;
+}
+#about_buttons > button {
+  font-size: 22px;
+  padding: 14px;
+  padding-inline: 20px;
+  color: white;
+  /* border: 5px solid rgb(143, 222, 25); */
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(0 0 0 / 65%);
+}
+#about_buttons > button:hover {
+  background-color: rgb(189, 231, 20);
+  color: black;
+}
+#skills {
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ok {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-inline-start: 100px;
+  background-color: rgba(45, 44, 44, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+}
+#ok > h2 {
+  font-size: 50px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+#ok > p {
+  font-size: 20px;
+  text-align: center;
+  margin-inline-end: 20px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+#grid > div {
+  background-color: #00000063;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 10px;
+}
+.properties {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1260px) {
+  #About > p {
+    padding-inline: 30px;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  header > div {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav {
+    display: none;
+  }
+  #talk {
+    display: none;
+  }
+  #one {
+    font-size: 30px;
+    margin-left:7px;
+  }
+  #two {
+    font-size: 30px;
+    margin-left:7px;
+  }
+  #section1 > p{
+     margin:10px;
+  }
+  #skills {
+    flex-direction: column;
+  }
+  #about_buttons {
+    flex-wrap: wrap;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #skills > div > img {
+    padding: 20px;
+    width: 70%;
+  }
+  #ok {
+    width: 300px;
+    margin-inline-start: 0px;
+  }
+  #About > p {
+    font-size: 20px;
+  }
+  .left {
+    top: 21em;
+  }
+  .right {
+    right: -13em;
+    top: 24em;
+  }
+}
+
+/*  */
