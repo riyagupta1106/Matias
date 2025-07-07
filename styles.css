@@ -59,7 +59,7 @@ a {
   border-radius: 6px;
 }
 body {
-  background-image: url(ueHvPU.jpg);
+  background-image: url("bgimage.jpg");
   background-attachment: fixed;
   background-size: 1000px;
   background-repeat: no-repeat;
