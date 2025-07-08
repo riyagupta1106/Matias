@@ -9,7 +9,39 @@
 ::-webkit-scrollbar-track {
   background-color: black;
 }
-
+.dropdown {
+  position: relative;
+}
+.bclass{
+  color: white;
+  background-color: rgb(28, 174, 28);
+  font-size: 15px;
+  cursor: pointer;
+  display: block;
+  border:none;
+}
+.dropdown_contents {
+  display: none;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  position: absolute;
+  width: 200px;
+}
+.dropdown:hover > .dropdown_contents {
+  background-color: rgb(233, 252, 233);
+  color: rgb(5, 25, 10);
+  display: flex;
+  flex-direction: column;
+}
+.dropdown_contents > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.dropdown:hover > .b {
+  background-color: rgb(69, 141, 69);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -57,7 +89,14 @@ a {
 #menu {
   padding: 20px;
   border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 body {
   background-image: url("bgimage.jpg");
   background-attachment: fixed;
@@ -67,7 +106,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  transition:all 2s ease-in 4s;
+  transition: all 2s ease-in 4s;
 }
 .hclass:hover {
   color: rgb(189, 231, 20);
@@ -317,22 +356,61 @@ form > label {
   #talk {
     display: none;
   }
+
   #one {
     font-size: 30px;
-    margin-left:7px;
+    margin-left: 7px;
   }
   #two {
     font-size: 30px;
-    margin-left:7px;
+    margin-left: 7px;
   }
-  #section1 > p{
-     margin:10px;
+  #section1 > p {
+    margin: 10px;
+    width: 300px;
   }
   #skills {
     flex-direction: column;
+    margin: 0;
+  }
+  #skills > div:nth-child(1) {
+    display: flex;
+    align-items: center;
   }
   #about_buttons {
-    flex-wrap: wrap;
+    display: flex;
+    overflow-x: auto; /* enables horizontal scrolling */
+    white-space: nowrap; /* prevents buttons from wrapping to next line */
+    gap: 10px; /* space between buttons */
+    padding: 10px;
+    scrollbar-width: thin; /* Firefox: thinner scrollbar */
+    scrollbar-color: #888 transparent;
+  }
+
+  #about_buttons::-webkit-scrollbar {
+    height: 6px; /* Chrome/Safari: scrollbar height */
+  }
+
+  #about_buttons::-webkit-scrollbar-thumb {
+    background-color: #888; /* color of the scroll thumb */
+    border-radius: 10px;
+  }
+
+  #about_buttons::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  #about_buttons > button {
+    flex: 0 0 auto; /* prevents shrinking */
+    padding: 10px 20px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #about_buttons::-webkit-scrollbar {
+    display: none;
   }
   #grid {
     display: grid;
@@ -350,11 +428,33 @@ form > label {
     font-size: 20px;
   }
   .left {
-    top: 21em;
+    display: none;
   }
   .right {
-    right: -13em;
-    top: 24em;
+    display: none;
+  }
+
+  header > h1 {
+    padding: 0;
+    margin: 2px;
+  }
+  #About {
+    padding: 0;
+  }
+  #about_buttons {
+    display: none;
+  }
+  #section1 {
+    padding: 8px;
+  }
+  #ok > h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  #ok > p {
+    font-size: 14px;
+    margin-inline-end: 0;
   }
 }
 
